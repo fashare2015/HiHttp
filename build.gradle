@@ -8,6 +8,9 @@ sourceSets {
     main {
         java.srcDirs = ['hihttp-lib/src/main/java']
     }
+    test {
+        java.srcDirs = ['hihttp-lib/src/test/java']
+    }
 }
 
 repositories {
