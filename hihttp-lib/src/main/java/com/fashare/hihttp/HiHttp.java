@@ -12,7 +12,8 @@ import com.fashare.hihttp.internal.task.CallImpl;
 public class HiHttp {
     private static volatile HiHttp sInstance;
 
-    private HiHttp(){}
+    private HiHttp() {
+    }
 
     public static HiHttp getInstance() {
         if (sInstance == null) {
@@ -24,7 +25,7 @@ public class HiHttp {
         return sInstance;
     }
 
-    public static Call newCall(){
+    public static Call newCall() {
         return new CallImpl();
     }
 }
